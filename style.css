@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f5f5f5;
+}
+
+.wrapper {
+    max-width: 480px;
+    margin: 0 auto;
+    background-color: white;
+    min-height: 100vh;
+}
+
+.search-area {
+    background: linear-gradient(to right, #f44336, #ff5722);
+    padding: 15px;
+    color: white;
+}
+
+.search-box {
+    background: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.search-box input {
+    border: none;
+    flex: 1;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-box::before {
+    content: "🔍";
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.highlight-box {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.highlight-box img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.highlight-text {
+    flex: 1;
+}
+
+.highlight-text h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.highlight-text p {
+    margin: 2px 0 0 0;
+    font-size: 14px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.product {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.product-name {
+    font-size: 14px;
+    padding: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
